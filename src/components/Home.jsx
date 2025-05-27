@@ -1,3 +1,5 @@
+import { MoveRight } from "lucide-react";
+
 export default function Home() {
   return (
     <>
@@ -6,7 +8,10 @@ export default function Home() {
         <p>Welcome to my portfolio</p>
       </div>
       <div>
-        <h2>Who am I?</h2>
+        <div>
+          <MoveRight />
+          <h2>Who am I?</h2>
+        </div>
         <p>
           I'm Ina and I'm an aspiring frontend developer who's got a higher
           professional degree in the field. I have a passion for creating

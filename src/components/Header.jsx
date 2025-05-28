@@ -1,6 +1,7 @@
 export default function Header() {
   return (
     <header>
+      <img src="/images/logo-black.png" alt="logo" className="w-20" />
       <nav>
         <ul>
           <li>

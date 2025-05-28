@@ -1,3 +1,25 @@
+import { motion } from "framer-motion";
+import { useParams } from "react-router";
+import { projectData } from "../projectData";
+
 export default function Project() {
-  return <h1>This is the project page</h1>;
+  const MotionMain = motion.main;
+  const { id } = useParams();
+  const project = projectData.find((p) => p.id === parseInt(id));
+
+  if (!project) {
+    return <p>No project found.</p>;
+  }
+
+  return (
+    <MotionMain
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h1>{project.name}</h1>
+      <p>{project.description}</p>
+    </MotionMain>
+  );
 }

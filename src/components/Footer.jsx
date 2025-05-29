@@ -1,3 +1,3 @@
 export default function Footer() {
-  return <h1>This is the footer</h1>;
+  return <p>Copyright © 2025 CodeByIna</p>;
 }

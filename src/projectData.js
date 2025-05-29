@@ -2,8 +2,9 @@ export const projectData = [
   {
     id: 1,
     name: "Holidaze - Project Exam 2",
-    teaser: "Description teaser here",
-    description: "This is the description",
+    teaser: "A modern front-end accommodation booking application.",
+    description:
+      "This is my Project Exam 2 assignment. It's a modern front-end accommodation booking application built with Vite + React and TailwindCSS. All API functionality is managed by Noroff's API Holidaze endpoint. My goal was to make the site easy-to-use and have a modern look with a serene theme. A user can either register as a normal customer or as a venue manager. Customers can view their profile, edit avatar and banner, book venues, view their bookings in their profile, and cancel bookings. Only venue managers can create venues, edit or delete their venues, view bookings of owned venues, and view owned venues in their profile.",
     reflection: "My reflections here",
     image: {
       src: "/images/holidaze-screenshot.jpg",

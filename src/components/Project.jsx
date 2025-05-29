@@ -1,15 +1,31 @@
 import { motion } from "framer-motion";
-import { useParams } from "react-router";
+import { useParams, useLocation } from "react-router";
 import { projectData } from "../projectData";
+import { useState } from "react";
+import { Share2 } from "lucide-react";
 
 export default function Project() {
-  const MotionMain = motion.main;
   const { id } = useParams();
+  const location = useLocation();
+  const [toast, setToast] = useState(false);
+
+  const MotionMain = motion.main;
   const project = projectData.find((p) => p.id === parseInt(id));
 
   if (!project) {
     return <p>No project found.</p>;
   }
+
+  const handleShare = async () => {
+    const url = `${window.location.origin}${location.pathname}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setToast(true);
+      setTimeout(() => setToast(false), 2000);
+    } catch (error) {
+      console.error("Failed to copy link:", error);
+    }
+  };
 
   return (
     <MotionMain
@@ -26,6 +42,16 @@ export default function Project() {
         <a href={project.links.live}>Live</a>
         <a href={project.links.repo}>Repo</a>
       </div>
+      <div>
+        <button onClick={handleShare} title="Copy to clipboard">
+          <Share2 />
+        </button>
+      </div>
+      {toast && (
+        <div>
+          <p>Copied to clipboard!</p>
+        </div>
+      )}
     </MotionMain>
   );
 }

@@ -19,7 +19,13 @@ export default function Project() {
       transition={{ duration: 0.5 }}
     >
       <h1>{project.name}</h1>
+      <img src={project.image.src} alt={project.image.alt} />
       <p>{project.description}</p>
+      <p>{project.reflection}</p>
+      <div>
+        <a href={project.links.live}>Live</a>
+        <a href={project.links.repo}>Repo</a>
+      </div>
     </MotionMain>
   );
 }

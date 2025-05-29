@@ -5,6 +5,7 @@ import PageNotFound from "./components/PageNotFound";
 import Project from "./components/Project";
 import { useLocation } from "react-router";
 import { AnimatePresence } from "framer-motion";
+import Home from "./components/Home";
 
 function App() {
   const location = useLocation();
@@ -12,6 +13,7 @@ function App() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="/project/:id" element={<Project />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>

@@ -1,3 +1,15 @@
 export default function Footer() {
-  return <p>Copyright © 2025 CodeByIna</p>;
+  return (
+    <footer>
+      <div>
+        <a href="https://github.com/Inaelise">
+          <img src="/images/github-mark.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/ina-elise-flom-b55433311/">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <p>Copyright © 2025 CodeByIna</p>
+    </footer>
+  );
 }

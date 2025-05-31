@@ -14,10 +14,10 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <img src="/images/logo-black.png" alt="logo" className="w-20" />
+    <header className="fixed top-0 flex justify-between items-center bg-dark w-full py-3 px-4">
+      <img src="/images/simplelogo-white.png" alt="logo" className="w-10" />
       <nav>
-        <ul>
+        <ul className="flex">
           <li>
             <button onClick={() => handleNavClick("home")}>Home</button>
           </li>

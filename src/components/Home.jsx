@@ -6,6 +6,11 @@ export default function Home() {
       <div>
         <h1>CodeByIna</h1>
         <p>Welcome to my portfolio</p>
+        <img
+          src="/images/b&w-profile.webp"
+          alt="Woman smiling"
+          className="w-80 drop-shadow-md"
+        />
       </div>
       <div>
         <div>

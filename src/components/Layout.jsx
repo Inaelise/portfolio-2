@@ -5,10 +5,21 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { Outlet, useLocation, useNavigate } from "react-router";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (custom) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: custom * 0.3, duration: 0.6, ease: "easeOut" },
+  }),
+};
 
 export default function Layout() {
   const location = useLocation();
   const navigate = useNavigate();
+  const MotionSection = motion.section;
   const isHome = location.pathname === "/";
 
   useEffect(() => {
@@ -31,15 +42,36 @@ export default function Layout() {
       <main>
         {isHome ? (
           <>
-            <section id="home">
+            <MotionSection
+              id="home"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+              custom={0}
+            >
               <Home />
-            </section>
-            <section id="projects">
+            </MotionSection>
+            <MotionSection
+              id="projects"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+              custom={1}
+            >
               <Projects />
-            </section>
-            <section id="contact">
+            </MotionSection>
+            <MotionSection
+              id="contact"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+              custom={2}
+            >
               <Contact />
-            </section>
+            </MotionSection>
           </>
         ) : (
           <Outlet />

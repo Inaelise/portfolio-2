@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-dark: #232225;
+
+  --font-main: "Roboto", sans-serif;
+  --font-second: "Chakra Petch", sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-dark text-white mt-30;
+    @apply bg-dark text-white mt-24 font-main;
+  }
+}
+
+@layer components {
+  .sections {
+    @apply flex gap-8 mb-4;
   }
 }

@@ -27,14 +27,14 @@ export default function Home() {
         <div className="flex items-center gap-12 my-6">
           <a
             href="https://github.com/Inaelise"
-            className="flex items-center gap-2 hover:scale-106 hover:drop-shadow-2xl animate"
+            className="flex items-center gap-2 hover animate"
           >
             <img src="/images/github-mark-white.png" className="w-[30px]" />
             <span className="font-medium">GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/ina-elise-flom-b55433311/"
-            className="hover:scale-106 hover:drop-shadow-2xl animate"
+            className="hover animate"
           >
             <span className="border-1 px-2 py-1 font-medium">LinkedIn</span>
           </a>

@@ -39,7 +39,7 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main>
+      <main className="flex flex-col gap-20 mx-auto max-w-[800px]">
         {isHome ? (
           <>
             <MotionSection

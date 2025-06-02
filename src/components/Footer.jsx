@@ -4,6 +4,8 @@ export default function Footer() {
       <div className="flex items-center gap-10">
         <a
           href="https://github.com/Inaelise"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 hover animate"
         >
           <img src="/images/github-mark-white.png" className="w-[30px]" />
@@ -11,6 +13,8 @@ export default function Footer() {
         </a>
         <a
           href="https://www.linkedin.com/in/ina-elise-flom-b55433311/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover animate"
         >
           <span className="border-1 px-2 py-1 font-medium">LinkedIn</span>

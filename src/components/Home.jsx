@@ -27,6 +27,8 @@ export default function Home() {
         <div className="flex items-center gap-12 my-6">
           <a
             href="https://github.com/Inaelise"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 hover animate"
           >
             <img src="/images/github-mark-white.png" className="w-[30px]" />
@@ -34,6 +36,8 @@ export default function Home() {
           </a>
           <a
             href="https://www.linkedin.com/in/ina-elise-flom-b55433311/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover animate"
           >
             <span className="border-1 px-2 py-1 font-medium">LinkedIn</span>

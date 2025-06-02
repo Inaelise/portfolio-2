@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 flex justify-between items-center bg-dark w-full py-3 px-4 z-50 font-second text-sm">
+    <header className="fixed top-0 flex justify-between items-center bg-dark w-full py-3 px-4 z-50 font-second text-sm drop-shadow-md">
       <img src="/images/simplelogo-white.png" alt="logo" className="w-10" />
       <nav>
         <ul className="flex gap-6">

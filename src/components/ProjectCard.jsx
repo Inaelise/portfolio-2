@@ -9,7 +9,7 @@ export default function ProjectCard({ id, name, teaser, image }) {
       <img
         src={image.src}
         alt={image.alt}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover rounded-lg"
       />
       <div className="sm:absolute sm:inset-0 sm:bg-black sm:opacity-0 group-hover:opacity-90 transition-opacity duration-300 ease-in-out flex flex-col gap-2 py-2 text-white sm:p-4">
         <h3 className="font-semibold">{name}</h3>

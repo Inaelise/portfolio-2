@@ -5,13 +5,13 @@ import { MoveRight } from "lucide-react";
 export default function Projects() {
   return (
     <>
-      <div>
-        <MoveRight />
-        <h2>Projects</h2>
+      <div className="sections">
+        <MoveRight size={28} />
+        <h2 className="section-h2">My Projects</h2>
       </div>
-      <ul>
+      <ul className="flex flex-col gap-8 items-center sm:flex-row sm:gap-6 mt-6">
         {projectData.map((project) => (
-          <li key={project.id}>
+          <li key={project.id} className="max-w-[400px]">
             <ProjectCard
               id={project.id}
               name={project.name}

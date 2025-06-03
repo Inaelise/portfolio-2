@@ -23,6 +23,10 @@
     @apply font-semibold text-xl;
   }
 
+  .project-h2 {
+    @apply text-lg underline underline-offset-2 mb-2;
+  }
+
   .hover {
     @apply hover:scale-106;
   }

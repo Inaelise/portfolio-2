@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <div className="px-4">
         <div className="sections">
-          <MoveRight />
+          <MoveRight size={28} />
           <h2 className="section-h2">Who Am I?</h2>
         </div>
         <p>

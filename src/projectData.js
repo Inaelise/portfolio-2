@@ -7,7 +7,7 @@ export const projectData = [
       "This is my Project Exam 2 assignment. It's a modern front-end accommodation booking application built with Vite + React and TailwindCSS. All API functionality is managed by Noroff's API Holidaze endpoint. My goal was to make the site easy-to-use and have a modern look with a serene theme. A user can either register as a normal customer or as a venue manager. Customers can view their profile, edit avatar and banner, book venues, view their bookings in their profile, and cancel bookings. Only venue managers can create venues, edit or delete their venues, view bookings of owned venues, and view owned venues in their profile.",
     reflection: "My reflections here",
     image: {
-      src: "/images/holidaze-screenshot.jpg",
+      src: "/images/project1.jpg",
       alt: "Homepage of Holidaze",
     },
     links: {
@@ -21,7 +21,7 @@ export const projectData = [
     teaser: "Description teaser",
     description: "Description here",
     reflection: "My reflections here",
-    image: { src: "/images/variety.webp", alt: "Homepage of Variety" },
+    image: { src: "/images/project2.jpg", alt: "Homepage of Variety" },
     links: {
       live: "https://js-frameworks-variety.netlify.app/",
       repo: "https://github.com/Inaelise/js-frameworks-ca",
@@ -34,7 +34,7 @@ export const projectData = [
     description: "Description here",
     reflection: "My reflections here",
     image: {
-      src: "/images/swiftauction.webp",
+      src: "/images/project3.jpg",
       alt: "Homepage of Swift Auction",
     },
     links: {

@@ -34,24 +34,49 @@ export default function Project() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
-      <h1>{project.name}</h1>
+      <h1 className="text-2xl text-center mb-2">{project.name}</h1>
       <img src={project.image.src} alt={project.image.alt} />
-      <p>{project.description}</p>
-      <p>{project.reflection}</p>
-      <div>
-        <a href={project.links.live}>Live</a>
-        <a href={project.links.repo}>Repo</a>
-      </div>
-      <div>
-        <button onClick={handleShare} title="Copy to clipboard">
-          <Share2 />
-        </button>
-      </div>
-      {toast && (
+      <div className="flex flex-col gap-8 p-4 md:p-0 md:py-4">
         <div>
-          <p>Copied to clipboard!</p>
+          <h2 className="project-h2">Description</h2>
+          <p>{project.description}</p>
         </div>
-      )}
+        <div>
+          <h2 className="project-h2">Reflections</h2>
+          <p>{project.reflection}</p>
+        </div>
+        <div className="flex gap-6 sm:gap-16 my-6 items-center">
+          <a
+            href={project.links.live}
+            className="hover animate border-1 px-6 py-1 font-medium hover:bg-white hover:text-dark"
+          >
+            Live
+          </a>
+          <a
+            href={project.links.repo}
+            className="hover animate border-1 px-6 py-1 font-medium hover:bg-white hover:text-dark"
+          >
+            Repo
+          </a>
+          <div className="relative">
+            <button
+              onClick={handleShare}
+              title="Copy to clipboard"
+              className="cursor-pointer flex gap-2 hover animate"
+            >
+              <Share2 /> Copy
+            </button>
+            {toast && (
+              <div className="relative">
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black text-white text-sm px-3 py-2 rounded-md shadow-md">
+                  Copied to clipboard!
+                  <div className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-black"></div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     </MotionMain>
   );
 }

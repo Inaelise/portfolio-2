@@ -59,6 +59,7 @@ export default function Layout() {
               viewport={{ once: true }}
               variants={fadeIn}
               custom={1}
+              className="px-4"
             >
               <Projects />
             </MotionSection>

@@ -9,9 +9,9 @@ export default function Projects() {
         <MoveRight size={28} />
         <h2 className="section-h2">My Projects</h2>
       </div>
-      <ul className="flex flex-col gap-8 items-center sm:flex-row sm:gap-6 mt-6">
+      <ul className="flex flex-col gap-8 items-center mt-6 sm:gap-12">
         {projectData.map((project) => (
-          <li key={project.id} className="max-w-[400px]">
+          <li key={project.id} className="max-w-[600px]">
             <ProjectCard
               id={project.id}
               name={project.name}

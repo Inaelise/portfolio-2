@@ -70,6 +70,7 @@ export default function Layout() {
               viewport={{ once: true }}
               variants={fadeIn}
               custom={2}
+              className="px-4"
             >
               <Contact />
             </MotionSection>

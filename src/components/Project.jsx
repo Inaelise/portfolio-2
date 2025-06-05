@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useParams, useLocation } from "react-router";
 import { projectData } from "../projectData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Share2, MoveLeft } from "lucide-react";
 import { Link } from "react-router";
 
@@ -9,6 +9,29 @@ export default function Project() {
   const { id } = useParams();
   const location = useLocation();
   const [toast, setToast] = useState(false);
+
+  // Custom scroll animation
+  useEffect(() => {
+    const scrollToTop = () => {
+      const start = window.scrollY;
+      const duration = 1000;
+      const startTime = performance.now();
+
+      const animateScroll = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        window.scrollTo(0, start * (1 - ease));
+
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+      requestAnimationFrame(animateScroll);
+    };
+
+    scrollToTop();
+  }, []);
 
   const MotionMain = motion.main;
   const project = projectData.find((p) => p.id === parseInt(id));
@@ -38,11 +61,11 @@ export default function Project() {
       <Link
         to="/"
         title="Go to home"
-        className="inline-block hover:text-purple-400 animate hover"
+        className="inline-block pl-4 mb-4 md:pl-0 hover:text-purple-400 animate hover"
       >
         <MoveLeft strokeWidth={1.5} size={28} />
       </Link>
-      <h1 className="text-2xl text-center mb-2">{project.name}</h1>
+      <h1 className="text-2xl mb-4 pl-4 md:pl-0">{project.name}</h1>
       <img src={project.image.src} alt={project.image.alt} />
       <div className="flex flex-col gap-8 p-4 md:p-0 md:py-4">
         <div>

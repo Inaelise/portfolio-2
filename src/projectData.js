@@ -36,7 +36,8 @@ export const projectData = [
     teaser: "A modern front-end auction web application.",
     description:
       "This is my Semester Project 2 assignment - A front-end auction web application built with Javascript + Vite, and TailwindCSS, developed for Noroff's Semester Project 2. The platform connects to Noroff's auction API, allowing users to register, log in, create listings, and place bids in real time. This project showcases skills in state management, API consumption, conditional rendering, and crafting responsive, user-focused interfaces with modern tools.",
-    reflection: "My reflections here",
+    reflection:
+      "This project helped me increase my understanding of asynchronous JavaScript, API interaction, and user experience. While functional, the codebase lacked some defensive programming patterns, such as validating user input and handling failed API requests more gracefully. One major improvement I have done was adding client-side input validation to my bidding form and retry logic which is useful in case of network instability or temporary API outages. These changes have made the project more robust and user-friendly, and I'm looking to improve it even more.",
     image: {
       src: "/images/project3.jpg",
       alt: "Homepage of Swift Auction",

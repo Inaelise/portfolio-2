@@ -59,7 +59,7 @@ export default function Header() {
               key={section}
               className={`${
                 activeSection === section
-                  ? "border-b-1 border-white"
+                  ? "border-b-1 border-white hover:border-purple-400"
                   : "border-b-1 border-transparent"
               } animate`}
             >

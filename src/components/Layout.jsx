@@ -49,6 +49,7 @@ export default function Layout() {
               viewport={{ once: true }}
               variants={fadeIn}
               custom={0}
+              className="scroll-mt-24"
             >
               <Home />
             </MotionSection>
@@ -59,7 +60,7 @@ export default function Layout() {
               viewport={{ once: true }}
               variants={fadeIn}
               custom={1}
-              className="px-4"
+              className="px-4 scroll-mt-24"
             >
               <Projects />
             </MotionSection>
@@ -70,7 +71,7 @@ export default function Layout() {
               viewport={{ once: true }}
               variants={fadeIn}
               custom={2}
-              className="px-4"
+              className="px-4 scroll-mt-24"
             >
               <Contact />
             </MotionSection>

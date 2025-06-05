@@ -72,17 +72,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        {/* <ul className="flex gap-6">
-          <li>
-            <button onClick={() => handleNavClick("home")}>Home</button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick("projects")}>Projects</button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick("contact")}>Contact</button>
-          </li>
-        </ul> */}
       </nav>
     </header>
   );

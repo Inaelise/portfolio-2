@@ -65,7 +65,7 @@ export default function Header() {
             >
               <button
                 onClick={() => handleNavClick(section)}
-                className="text-white cursor-pointer"
+                className="text-white cursor-pointer hover:text-purple-400 animate"
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </button>

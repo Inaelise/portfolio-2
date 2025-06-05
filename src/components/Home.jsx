@@ -65,7 +65,7 @@ export default function Home() {
               <a
                 href="https://nodejs.org/en"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to official website"
               >
                 <img src="/images/node-icon.png" className="w-[30px]" />
@@ -76,7 +76,7 @@ export default function Home() {
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to MDN web docs"
               >
                 <img src="/images/html-icon.png" className="w-[30px]" />
@@ -87,7 +87,7 @@ export default function Home() {
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to MDN web docs"
               >
                 <img src="/images/css-icon.png" className="w-[30px]" />
@@ -98,7 +98,7 @@ export default function Home() {
               <a
                 href="https://tailwindcss.com/"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to official website"
               >
                 <img src="/images/tailwind-icon.png" className="w-[30px]" />
@@ -109,7 +109,7 @@ export default function Home() {
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to MDN web docs"
               >
                 <img src="/images/js-icon.png" className="w-[30px]" />
@@ -120,7 +120,7 @@ export default function Home() {
               <a
                 href="https://react.dev/"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to official website"
               >
                 <img src="/images/react-icon.png" className="w-[30px]" />
@@ -131,7 +131,7 @@ export default function Home() {
               <a
                 href="https://vite.dev/"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to official website"
               >
                 <img src="/vite.svg" className="w-[30px]" />
@@ -142,7 +142,7 @@ export default function Home() {
               <a
                 href="https://git-scm.com/"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to official website"
               >
                 <img src="/images/git-icon.png" className="w-[30px]" />
@@ -153,7 +153,7 @@ export default function Home() {
               <a
                 href="https://github.com/"
                 target="_blank"
-                className="icon-list"
+                className="icon-list hover animate"
                 title="Go to official website"
               >
                 <img src="/images/github-mark-white.png" className="w-[30px]" />

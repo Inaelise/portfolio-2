@@ -4,7 +4,7 @@ export const projectData = [
     name: "Holidaze - Project Exam 2",
     teaser: "A modern front-end accommodation booking application.",
     description:
-      "This is my Project Exam 2 assignment - A full-featured front-end booking application built with React + Vite, and TailwindCSS, developed for Noroff's Project Exam 2. The app connects to the Holidaze API to manage user authentication, venue listings, and bookings. Designed with a modern, serene UI focused on clarity and ease of use. This project demonstrates proficiency in React, REST API integration, role-based UI, and building polished, scalable front-end applications.",
+      "This is my Project Exam 2 assignment - A full-featured front-end booking application built with React + Vite, and TailwindCSS, developed for Noroff's Project Exam 2. The app connects to the Holidaze API to manage user authentication, venue listings, and bookings. Designed with a modern, serene UI focused on clarity and ease of use. This project demonstrates proficiency in React, REST API integration, role-based UI, and building a polished, scalable front-end application.",
     reflection: "My reflections here",
     image: {
       src: "/images/project1.jpg",
@@ -20,7 +20,7 @@ export const projectData = [
     name: "Variety - JavaScript Frameworks",
     teaser: "A modern front-end eCom store application.",
     description:
-      "This is my JavaScript Frameworks course assignment - A modern, responsive front-end eCommerce application built with React + Vite, and CSS Modules. This project interacts with Noroff's API Online Store, handling dynamic product listings, detailed views, a shopping cart, and a contact form with validation. This project demonstrates core front-end development skills, API handling, and UI/UX considerations for real-world applications.",
+      "This is my JavaScript Frameworks course assignment - A modern, responsive front-end eCommerce application built with React + Vite, and CSS Modules. This project interacts with Noroff's API Online Store, handling dynamic product listings, detailed views, a shopping cart, and a contact form with validation. This project demonstrates core front-end development skills, API handling, and UI/UX considerations for a real-world application.",
     reflection: "My reflections here",
     image: { src: "/images/project2.jpg", alt: "Homepage of Variety" },
     links: {

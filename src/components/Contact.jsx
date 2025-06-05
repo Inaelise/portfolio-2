@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import { MoveRight, Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 
@@ -60,6 +60,11 @@ export default function Contact() {
       <div className="sections">
         <MoveRight size={28} />
         <h2 className="section-h2">Contact</h2>
+      </div>
+      <div className="flex flex-col gap-2 items-center my-2 mt-10 text-sm sm:text-base">
+        <Mail size={36} strokeWidth={1} />
+        <p>Want to get in touch?</p>
+        <p>Fill out the form to send me a message.</p>
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}

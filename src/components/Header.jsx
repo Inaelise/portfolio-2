@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useMemo } from "react";
-import { useNavigate, useLocation } from "react-router";
+import { useNavigate, useLocation, Link } from "react-router";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -49,7 +49,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 flex justify-between items-center bg-dark w-full py-3 px-4 z-50 font-second text-sm drop-shadow-md">
-      <img src="/images/simplelogo-white.png" alt="logo" className="w-10" />
+      <Link to="/" title="Go to home">
+        <img src="/images/simplelogo-white.png" alt="logo" className="w-10" />
+      </Link>
       <nav>
         <ul className="flex gap-6">
           {sectionIds.map((section) => (

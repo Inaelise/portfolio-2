@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { useParams, useLocation } from "react-router";
 import { projectData } from "../projectData";
 import { useState } from "react";
-import { Share2 } from "lucide-react";
+import { Share2, MoveLeft } from "lucide-react";
+import { Link } from "react-router";
 
 export default function Project() {
   const { id } = useParams();
@@ -34,6 +35,13 @@ export default function Project() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
+      <Link
+        to="/"
+        title="Go to home"
+        className="inline-block hover:text-purple-400 animate hover"
+      >
+        <MoveLeft strokeWidth={1.5} size={28} />
+      </Link>
       <h1 className="text-2xl text-center mb-2">{project.name}</h1>
       <img src={project.image.src} alt={project.image.alt} />
       <div className="flex flex-col gap-8 p-4 md:p-0 md:py-4">

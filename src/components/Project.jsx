@@ -79,12 +79,14 @@ export default function Project() {
         <div className="flex gap-6 sm:gap-16 my-6 items-center">
           <a
             href={project.links.live}
+            target="_blank"
             className="hover animate border-1 px-6 py-1 font-medium hover:bg-white hover:text-dark"
           >
             Live
           </a>
           <a
             href={project.links.repo}
+            target="_blank"
             className="hover animate border-1 px-6 py-1 font-medium hover:bg-white hover:text-dark"
           >
             Repo
